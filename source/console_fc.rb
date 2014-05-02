@@ -3,17 +3,16 @@ class Console
     puts "Get ready for some flash cards!"
   end
 
-  def self.display_question
-    # question = # HEY CONTROLLER, I NEED THE QUESTION
-    # puts question
-    puts "dummy question"
+  def self.ask_question(question)
+
+    puts question
   end
 
   def self.prompt_guess
     print "Guess: "
   end
 
-  def self.user_guess
+  def self.receive_guess
     prompt_guess
     gets.chomp
     # HEY CONTROLLER, FEEL FREE TO TAKE THIS GUESS
